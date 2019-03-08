@@ -13,7 +13,7 @@ In this demo, we will be getting our hands dirty the Raspberry Pi and Nodejs. We
 
 ## Schematics
 
-<img width="846" alt="screen shot 2019-03-08 at 10 30 28 am" src="https://user-images.githubusercontent.com/4650739/54041836-5a709580-418e-11e9-8dcd-14d1ed68d878.png">
+<img width="757" alt="screen shot 2019-03-08 at 12 57 45 pm" src="https://user-images.githubusercontent.com/4650739/54049573-77af5f00-41a2-11e9-84ed-63f266567f01.png">
 
 
 The left end of the above circuit will be connected to Pin 9 – GND pin of pi (Left Column, 5th pin). And the right end of the above circuit will be connected to Pin 11(Left Column, 6th pin).
@@ -44,9 +44,9 @@ Navigate to [http://localhost:3000](http://localhost:3000) in your browser of ch
 Once your breadboard is configured, you should be able to enter a message onto the form and upon submission your Pi will emit your message in morse code :tada:.
 
 ## For use on a Rasperberry Pi
-Since this is the IoT, let us expose our localhost as a publicly accessible URL. We can do this using your IP Address.
+Since this is the IoT, let us expose our localhost as a publicly accessible URL. We can do this using the IP Address of your Pi.
 
-To get your Pi's IP address. Open the terminal on your Pi and enter:
+To get your Raspberry Pi's IP address. Open the terminal on your Pi and enter:
 
     hostname -I
 
@@ -56,7 +56,9 @@ Once you get your IP address, you should be able to access the server running on
 
     http:.//[YOUR_IP_ADDRESS]:3000
 
-If you see a Mor
+If you see a Morse Code website, you should be good to go!
+
+<img width="735" alt="screen shot 2019-03-08 at 12 51 40 pm" src="https://user-images.githubusercontent.com/4650739/54049039-09b66800-41a1-11e9-9a6a-31a81dca6cc5.png">
 
 
 ## Contributing
