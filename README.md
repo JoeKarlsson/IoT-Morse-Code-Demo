@@ -1,4 +1,4 @@
-# AT&T Hackathon IoT Morse Code Emitter Starter Kit
+# IoT Morse Code Emitter Starter Kit
 
 In this demo, we will be getting our hands dirty the Raspberry Pi and Nodejs. We will be writing a simple program in Node.js to turn a LED on and off. Then we will extend this logic to build a simple piece of embedded system that can take a piece of string and emit its morse code.
 
@@ -78,15 +78,10 @@ Open a new terminal/putty into the Pi and cd into the ngrok folder. And from the
 If everything is okay, as soon as you connect to the address, a new websocket will be created and you will be able to tranmist data between the client and the server.
 
 
-##Contributing
+## Contributing
 
 1. Fork it!
 2. Create your feature branch: ```git checkout -b my-new-feature```
 3. Commit your changes: ```git commit -am 'Add some feature'```
 4. Push to the branch: ````git push origin my-new-feature````
 5. Submit a pull request :D
-
-##Credits
-
-- [DevLeague](http://www.devleague.com/)
-- [Jr. DevLeague](http://jrdevleague.com/)
