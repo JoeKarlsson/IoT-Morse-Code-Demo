@@ -13,7 +13,8 @@ In this demo, we will be getting our hands dirty the Raspberry Pi and Nodejs. We
 
 ## Schematics
 
-![screen-shot-2014-10-03-at-5 33 02-pm](https://cloud.githubusercontent.com/assets/4650739/23240667/c6d58c88-f912-11e6-9d88-5577050d35c3.png)
+<img width="846" alt="screen shot 2019-03-08 at 10 30 28 am" src="https://user-images.githubusercontent.com/4650739/54041836-5a709580-418e-11e9-8dcd-14d1ed68d878.png">
+
 
 The left end of the above circuit will be connected to Pin 9 – GND pin of pi (Left Column, 5th pin). And the right end of the above circuit will be connected to Pin 11(Left Column, 6th pin).
 
@@ -43,39 +44,19 @@ Navigate to [http://localhost:3000](http://localhost:3000) in your browser of ch
 Once your breadboard is configured, you should be able to enter a message onto the form and upon submission your Pi will emit your message in morse code :tada:.
 
 ## For use on a Rasperberry Pi
-Since this is the IoT, let us expose our localhost as a publicly accessible URL. For that we will use ngrok.
+Since this is the IoT, let us expose our localhost as a publicly accessible URL. We can do this using your IP Address.
 
+To get your Pi's IP address. Open the terminal on your Pi and enter:
 
-To use Ngrok you need to download ngrok application to your Raspberry Pi.  To do that type the following command on your Raspberry Pi terminal:
+    hostname -I
 
-    sudo wget https://dl.ngrok.com/ngrok_2.0.19_linux_arm.zip
+![proxy duckduckgo](https://user-images.githubusercontent.com/4650739/54042197-2a75c200-418f-11e9-8399-e6f017bc8c4f.jpg)
 
-and then unzip it using:
+Once you get your IP address, you should be able to access the server running on your pi by entering this in the browser of another machine:
 
-    sudo unzip ngrok_2.0.19_linux_arm.zip
+    http:.//[YOUR_IP_ADDRESS]:3000
 
-
-This will take a few minutes, please be patient. Once the download is completed, we will unzip it. Run
-
-    unzip ngrok.zip
-
-You will have to sign up with ngrok to establish a secure connection with your Pi. To create a ngrok account click here and then click signup to get an authtoken key. This token is necessary if you want your own custom domain doing an online SSH.
-
-You need to embed this token to your Raspberry Pi in the command line using:
-
-    ./ngrok authtoken  yourauthtoken
-
-Now, that is done, we will restart the node server. Run
-
-    sudo node server.js
-
-Open a new terminal/putty into the Pi and cd into the ngrok folder. And from there run
-
-    ./ngrok http 3001
-
-3001 is the port number we have used in server.js. This will give you a public URL. You can use either the http or https version. Open a browser on your computer and navigate to  http://41b9687d.ngrok.com/trigger where  http://41b9687d.ngrok.com needs to be replaced with your ngrok URL.
-
-If everything is okay, as soon as you connect to the address, a new websocket will be created and you will be able to tranmist data between the client and the server.
+If you see a Mor
 
 
 ## Contributing
